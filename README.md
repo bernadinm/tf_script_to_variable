@@ -39,4 +39,11 @@ Use this:
 curl -fsSL "http://169.254.169.254/latest/meta-data/local-ipv4"
 ```
 
+# Authors
 
+Originally created and maintained by [Miguel Bernadin](https://github.com/bernadinm).
+
+
+# License
+
+Apache 2 Licensed. See LICENSE for full details.
