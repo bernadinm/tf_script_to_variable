@@ -1,4 +1,4 @@
-# Read Script and return output
+# Input Path for the Script
 variable "input_script_path" {
  default = ""
 }
