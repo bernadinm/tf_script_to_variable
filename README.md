@@ -18,27 +18,6 @@ module "public-ip-detect-contents" {
  dcos_ip_detect_public_contents = "${module.public-ip-detect-contents.script}"
 ```
 
-
-## Limitation
-
-Since the script is being interpreted entirely before its run, incuding your comments, your script must not have any unenclosed single quotes, double quotes, or apostrophes. This causes an EOF error.
-
-i.e, do not use comments like this with an apostrophe:
-
-```bash
-#!/bin/sh
-# Node's internal
-curl -fsSL "http://169.254.169.254/latest/meta-data/local-ipv4"
-```
-
-Use this:
-
-```bash
-#!/bin/sh
-# Nodes (without apostrophe works) internal
-curl -fsSL "http://169.254.169.254/latest/meta-data/local-ipv4"
-```
-
 # Authors
 
 Originally created and maintained by [Miguel Bernadin](https://github.com/bernadinm).
