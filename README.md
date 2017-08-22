@@ -18,6 +18,10 @@ module "public-ip-detect-contents" {
  dcos_ip_detect_public_contents = "${module.public-ip-detect-contents.script}"
 ```
 
+# Notice
+
+This module only works on the latest version of the `tf_dcos_core` and above from [bernadinm/tf_dcos_core#3](https://github.com/bernadinm/tf_dcos_core/pull/3)
+
 # Authors
 
 Originally created and maintained by [Miguel Bernadin](https://github.com/bernadinm).
